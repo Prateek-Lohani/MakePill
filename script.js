@@ -2,16 +2,16 @@
 
 var tl=gsap.timeline();
 
-// tl.from('.left-text',{
-//     y:100,
-//     opacity:0,
-//     delay:1.6,
-//     duration:.95
-// })
-// tl.from('.loadedpercent',{
-//     opacity:0,
-//     duration:5.2
-// })
+tl.from('.left-text',{
+    y:100,
+    opacity:0,
+    delay:1.6,
+    duration:.95
+})
+tl.from('.loadedpercent',{
+    opacity:0,
+    duration:5.2
+})
 
 tl.to('#overlay',{
     display:"none",
