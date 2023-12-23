@@ -1,14 +1,41 @@
-gsap.from('.left-text',{
+
+
+var tl=gsap.timeline();
+
+tl.from('.left-text',{
     y:100,
     opacity:0,
     delay:1.6,
     duration:.95
 })
-gsap.from('.loadedpercent',{
+tl.from('.loadedpercent',{
     opacity:0,
-    delay:2.6,
-    duration:1.2
+    duration:5.2
 })
+
+tl.to('#overlay',{
+    display:"none",
+})
+
+tl.to('#main',{
+    display:"block"
+})
+
+tl.from('div h1',{
+    y:40,
+    opacity:0,
+    duration:.4,
+    stagger:.2
+}
+)
+
+tl.from('.bottompara',{
+    opacity:0,
+    y:-20,
+    delay:.5,
+    duration:1.9
+})
+
 
 var loader=document.querySelector('.loadedpercent');
 var count=0;

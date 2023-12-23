@@ -5,6 +5,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
     <link rel="stylesheet" href="style.css">
     <title>MakePill | Digital, creative & immersive products.</title>
 </head>
@@ -18,7 +23,34 @@
         </div>
 </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<div id="main" class="hidden w-full h-[100vh]">
+    <nav class="nav fixed w-full absolute flex justify-between items-center text-[white] p-6 md:py-10 md:px-8">
+        <h2 class="md:text-3xl text-xl">makepill</h2>
+        <p class="text-[1.1vh] md:text-[.8vw]">/INDEX</p>
+        <div class="right-nav md:w-[5vmax] flex justify-between items-center border border-solid-white rounded-[20px]">
+            <p class="border-r-2 p-2 md:px-3">M</p>
+            <p><i class="ri-equal-line p-2 md:px-2"></i></p>
+        </div>
+    </nav>
+    <div class="page1 overflow-hidden w-full h-full"><video src="./assets/page1.mp4" class="w-full h-full object-cover" autoplay muted loop></video>
+    <div class="line absolute text-center md:top-[33%] top-[50%] text-[white] left-[50%] translate-x-[-50%] ">
+        
+        <div class="overflow-hidden"><h1 class=" mb-1 text-5xl font-[100] w-[90vw] md:text-center md:text-[18vh]">Digital products</h1></div>
+        <div class="overflow-hidden"><h1 class=" text-5xl font-[100] w-[90vw] md:text-center md:text-[18vh]">creatives & <span class="immersive hover:text-[#ff9248] cursor-pointer">Immersives<span class="text-[yellow]">*</span></span></h1></div>
+    </div>
+    <div class="bottompara absolute w-full md:w-full text-center text-xl top-[82%] left-[50%] translate-x-[-50%]">
+        <p class="text-[white] md:mb-1">We think and design unique experiences</p>
+        <p class="text-[white]"> for tomorrow's innovative products.</p>  
+    </div>
+    </div>
+    <div class="page2 p-0 w-full md:h-screen">
+            <video class="md:w-full md:h-full md:object-cover" src="./assets/makepill_showreel_opti_a5c666148b.mp4" class="w-full h-full object-cover" autoplay muted loop></video>
+    </div>
+    
+</div>
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js" integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./script.js"></script>
 </body>
 </html>
