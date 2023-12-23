@@ -1,0 +1,16 @@
+@font-face {
+    font-family: neue;
+    src: url(./assets/NeueHaasDisplay-Roman.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: neue;
+}
+
+body,html{
+    height: 100%;
+    width: 100%;
+}
