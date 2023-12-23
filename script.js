@@ -29,6 +29,13 @@ tl.from('div h1',{
 }
 )
 
+tl.from('nav',{
+    y:-30,
+    opacity:0,
+    duration:.6,
+    stagger:.2
+})
+
 tl.from('.bottompara',{
     opacity:0,
     y:-20,
