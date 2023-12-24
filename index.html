@@ -17,18 +17,22 @@
 <div id="overlay" class="h-full w-full">
     <div class="container w-full h-full">
         <video src="./assets/intro.mp4" autoplay muted class="w-full h-full object-cover z-1"></video>
-        <div class="footer overflow-hidden w-full p-6 absolute text-[white] top-[85%] md:p-10 flex items-center justify-between">
+        <!-- <div class="bg-[] footer overflow-hidden w-full p-6 absolute text-[white] top-[85%] md:p-10 flex items-center justify-between">
             <p class="left-text w-28 md:w-full">Just a second, we are crafting some pills . . .</p>
-            <h5 class="loadedpercent md:mr-4">0%</h5>
+            <h5 class="loadedpercent md:mr-4 bg-[black]">0%</h5>
+        </div> -->
+        <div class="loadingtext absolute bottom-[0] px-8 flex justify-between items-center w-full py-4 text-[white]">
+            <p class="">Just a second, we are crafting some pills . . .</p>
+            <h5 class="loadedpercent">0%</h5>
         </div>
 </div>
 </div>
-<div id="main" class="hidden w-full h-[100vh]">
+<div id="main" class="hidden">
     <nav class="nav fixed w-full absolute flex justify-between items-center text-[white] p-6 md:py-10 md:px-8">
         <h2 class="md:text-3xl text-xl font-black">makepill</h2>
         <p class="text-[1.1vh] md:text-[.8vw]">/INDEX</p>
-        <div class="right-nav md:w-[5vmax] flex justify-between items-center border border-solid-white rounded-[20px]">
-            <p class="border-r-2 p-2 md:px-3">M</p>
+        <div class="right-nav md:w-[content] flex justify-between items-center border border-solid-white rounded-[6px]">
+        
             <p><i class="ri-equal-line p-2 md:px-2"></i></p>
         </div>
     </nav>
@@ -65,8 +69,8 @@
     
 </div>
 <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js" integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js" integrity="sha512-7Au1ULjlT8PP1Ygs6mDZh9NuQD0A5prSrAUiPHMXpU6g3UMd8qesVnhug5X4RoDr35x5upNpx0A6Sisz1LSTXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/ScrollTrigger.min.js" integrity="sha512-LQQDtPAueBcmGXKdOBcMkrhrtqM7xR2bVrnMtYZ8ImAZhFlIb5xrMqQ6uZviyeSB+4mYj89ta8niiCIQM1Gj0w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="./script.js"></script>
 </body>
 </html>
