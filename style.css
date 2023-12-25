@@ -14,3 +14,19 @@ body,html{
     height: 100%;
     width: 100%;
 }
+
+ .linerotate{
+    animation-name: movetext;
+    animation-duration: 4.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+} 
+
+@keyframes movetext{
+    from{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(calc(-100% - 8px));
+    }
+}

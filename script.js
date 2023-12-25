@@ -2,14 +2,14 @@
 var tl=gsap.timeline();
 
 tl.from('.left-text',{
-    y:100,
+    y:15,
     opacity:0,
     delay:1.6,
     duration:.95
 })
 tl.from('.loadedpercent',{
     opacity:0,
-    duration:5
+    duration:4.2
 })
 
 tl.to('#overlay',{
@@ -20,7 +20,7 @@ tl.to('#main',{
     display:"block"
 })
 
-tl.from('div h1',{
+tl.from('.herotext h1',{
     y:40,
     opacity:0,
     duration:.4,
@@ -38,8 +38,8 @@ tl.from('nav',{
 tl.from('.bottompara',{
     opacity:0,
     y:-20,
-    delay:.5,
-    duration:1.9
+    // delay:.5,
+    duration:1.5
 })
 
 
@@ -52,5 +52,30 @@ setInterval(function(){
     }
     else{
         loader.textContent = count+'%';
+        loader.style.fontWeight='600';
     }
-},75)
+},65)
+
+
+var page2=document.querySelector('.page2');
+ var crsr=document.querySelector('.crsr');
+page2.addEventListener('mouseover',function(){
+    page2.style.cursor='pointer';
+    crsr.style.display='block';
+    
+})
+
+crsr.addEventListener('click',function(){
+    console.log('clicked');
+})
+
+page2.addEventListener('mouseout',function(){
+    crsr.style.display='none';
+})
+
+
+
+document.addEventListener('mousemove',function(det){
+  crsr.style.top=`${det.y}px`;
+  crsr.style.left=`${det.x}px`;
+})
